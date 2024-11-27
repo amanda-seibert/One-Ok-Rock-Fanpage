@@ -1,0 +1,248 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("img/background2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    max-width: 90%; 
+    width: 1000px; 
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(165, 105, 184, 0.502);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#cabecalho img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+#menu {
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+    margin: 20px 0; 
+    flex-wrap: wrap; 
+    text-decoration: none;
+    
+}
+
+.item {
+    width: 150px; 
+    height: 50px; 
+    background-color: rgb(87, 42, 87); 
+    color: white; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    text-align: center;
+}
+
+.item:hover {
+    background-color: rgb(12, 10, 10);
+}
+
+#titulo h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.titulo-principal {
+    font-size: 3rem; 
+    font-weight: bold; 
+    color: #0a0101; 
+    margin-top: -100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.subtitulo {
+    font-size: 50px; 
+    color: black; 
+    font-weight: normal;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+
+#conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.texto {
+    width: 100%;
+    text-align: center;
+    color: #070606;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.imagem {
+    flex: 1 1 calc(33.33% - 20px); 
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.imagem2-container {
+    display: flex; 
+    gap: 10px; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.imagem2 {
+    flex: 1 1 auto; 
+    max-width: 400px; 
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.imagem2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.video {
+    width: 100%;
+    margin-top: 20px;
+    aspect-ratio: 16 / 9; 
+}
+
+.imagem-taka {
+    max-width: 50%;
+    height: auto;   
+    display: block; 
+    margin: 0 auto; 
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 100%; 
+    height: auto; 
+    aspect-ratio: 16/9; 
+}
+
+.imagem-ryota {
+    max-width: 50%;
+    height: auto;   
+    display: block; 
+    margin: 0 auto; 
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+    padding-left: 0; 
+}
+
+.texto-destaque {
+    font-size: 24px; 
+    line-height: 1.8; 
+    color: #333; 
+    text-align: center; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.lista-esquerda {
+    list-style-position: inside; 
+    padding-left: 0; 
+    margin: 10px 0;
+    text-align: left; 
+}
+
+.lista-esquerda li {
+    margin-bottom: 10px;
+}
+
+.texto.curiosidades h2 {
+    text-align: center; 
+}
+
+.texto.curiosidades ul {
+    text-align: left; 
+    list-style-position: inside; 
+}
+
+.texto-destaque-centralizado {
+    font-size: 24px; 
+    line-height: 1.8; 
+    color: #333; 
+    text-align: left; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+#menu a {
+    text-decoration: none; 
+}
+
+#menu a:hover {
+    text-decoration: none; 
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .item {
+        width: 100%; 
+    }
+
+    .imagem2 {
+        max-width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-principal {
+        font-size: 2rem;
+    }
+
+    .subtitulo {
+        font-size: 1.5rem;
+    }
+}
